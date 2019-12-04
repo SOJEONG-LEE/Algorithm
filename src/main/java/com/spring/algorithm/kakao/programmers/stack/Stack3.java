@@ -107,6 +107,16 @@ public class Stack3 extends AbstractAlgorithm {
         return answer;
     }
 
+    static class Truck {
+        int weight;
+        int index;
+
+        public Truck(int weight, int index) {
+            this.weight = weight;
+            this.index = index;
+        }
+    }
+
     public int solution2() {
         Stack<Integer> truckStack = new Stack<>();
         Map<Integer, Integer> bridgeMap = new HashMap<>();
@@ -133,6 +143,45 @@ public class Stack3 extends AbstractAlgorithm {
         return answer;
     }
 
+    public int solution3() {
+        Queue<Integer> truckQueue = new LinkedList<>();
+        int currentWeight = weight;
+        int idx = 0;
+        int totalTime = 0;
+        boolean flagWhile = true;
+        int [] enterBridgeTime = new int[truck_weights.length];
+        int outIdx = 0;
+
+        while (flagWhile) {
+            totalTime += 1;
+            if( truckQueue.isEmpty() ) {
+                if( idx < truck_weights.length && currentWeight >= truck_weights[idx]) {
+                    truckQueue.add(truck_weights[idx]);
+                    currentWeight -= truck_weights[idx];
+                    enterBridgeTime[idx] = totalTime;
+                    idx += 1;
+                }
+            } else {
+
+                if( (totalTime - enterBridgeTime[outIdx]) == bridge_length ) {
+                    outIdx += 1;
+                    currentWeight += truckQueue.poll();
+                }
+
+                if( (idx < truck_weights.length) && (currentWeight >= truck_weights[idx])  ) {
+                    enterBridgeTime[idx] = totalTime;
+                    truckQueue.add(truck_weights[idx]);
+                    currentWeight -= truck_weights[idx];
+                    idx += 1;
+                }
+            }
+            if( idx == truck_weights.length && truckQueue.isEmpty()) {
+                flagWhile = false;
+            }
+        }
+        return totalTime;
+    }
+
 
     @Override
     public <T> void printResult(T object) {
@@ -140,13 +189,5 @@ public class Stack3 extends AbstractAlgorithm {
         System.out.println(answer);
     }
 
-    static class Truck {
-        int weight;
-        int index;
 
-        public Truck(int weight, int index) {
-            this.weight = weight;
-            this.index = index;
-        }
-    }
 }
