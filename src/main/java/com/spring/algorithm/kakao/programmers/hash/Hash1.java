@@ -95,4 +95,17 @@ public class Hash1 extends AbstractAlgorithm {
         System.out.println(answer);
 
     }
+
+    public void test4(){
+        HashMap<String, Integer> participantMap = new HashMap<>();
+        for(String player : participant) participantMap.put(player, participantMap.getOrDefault(player,0)+1);
+        for(String player : completion) {
+            int value = participantMap.get(player)-1;
+            participantMap.put(player, participantMap.get(player)-1);
+            if(value == 0) participantMap.remove(player);
+        }
+
+        System.out.println(participantMap.keySet().stream().findFirst().get());
+
+    }
 }
