@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Stack;
 
 @Service("stack1")
 public class Stack1 extends AbstractAlgorithm {
@@ -13,12 +14,16 @@ public class Stack1 extends AbstractAlgorithm {
     private int[] progresses;
     private int[] speeds;
 
-    public Stack1(){
-        this.progresses = new int[]{93, 30, 55};
-        this.speeds = new int[]{1, 30, 5};
+    public Stack1() {
+        this.progresses = new int[]{96,94};
+        this.speeds = new int[]{3,3};
     }
 
-    public int[] test1() {
+    @Override
+    public <T> void printResult(T object) {
+    }
+
+    public void test1() {
         int[] answer;
         List<Integer> result = new ArrayList<>();
         int[] day = new int[progresses.length];
@@ -37,10 +42,21 @@ public class Stack1 extends AbstractAlgorithm {
             }
         }
         answer = result.stream().mapToInt(i -> i).toArray();
-        return answer;
     }
 
-    public int[] solution1() {
+    public void test2() {
+        Stack<Integer> answer = new Stack<>();
+        double beforeDay = 0;
+        for (int i = 0; i < progresses.length; i++){
+            double day = Math.ceil((double) (100-progresses[i])/speeds[i]);
+            if(!answer.isEmpty() && beforeDay >= day) answer.push(answer.pop()+1);
+            else { answer.push(1); beforeDay = day; }
+        }
+        System.out.println(answer);
+        int[] a = answer.stream().mapToInt(Integer::intValue).toArray();
+    }
+
+    public void solution1() {
         int[] dayOfend = new int[100];
         int day = -1;
         for (int i = 0; i < progresses.length; i++) {
@@ -49,15 +65,7 @@ public class Stack1 extends AbstractAlgorithm {
             }
             dayOfend[day]++;
         }
-        return Arrays.stream(dayOfend).filter(i -> i != 0).toArray();
-    }
-
-    @Override
-    public <T> void printResult(T object){
-        int[] answer = (int[]) object;
-        for (int result : answer) {
-            System.out.print(result+" ");
-        }
+        Arrays.stream(dayOfend).filter(i -> i != 0).toArray();
     }
 
 }
