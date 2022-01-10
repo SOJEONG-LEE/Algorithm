@@ -13,7 +13,7 @@ public class Stack2 extends AbstractAlgorithm {
     private int location;
 
     public Stack2() {
-        this.priorities = new int[]{1, 1, 9, 1, 1, 1, 1, 1, 1};
+        this.priorities = new int[]{1, 1, 9, 1, 1, 1};
         this.location = 0;
     }
 
@@ -93,27 +93,24 @@ public class Stack2 extends AbstractAlgorithm {
         System.out.println(0);
     }
 
-    public void test2(){
-        int answer = 0;
-        int index = location;
-        List<Integer> queue = Arrays.stream(priorities).boxed().collect(Collectors.toList());
-        List<Integer> print = Arrays.stream(priorities).boxed()
-                .sorted(Collections.reverseOrder()).collect(Collectors.toList());
-
-        while(!queue.isEmpty()){
-            int num = queue.remove(0);
-            if(num==print.get(0)){
-                print.remove(0);
-                answer++;
-                if(index==0) System.out.println(answer);
-            }else{
-                queue.add(num);
-            }
-            index--;
-            if (index == -1) index = print.size()-1;
+    public void test2() {
+        Queue<int[]> printQueue = new LinkedList<>();
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Comparator.reverseOrder());
+        for (int i = 0; i < priorities.length; i++) {
+            int num = priorities[i];
+            printQueue.add(new int[]{num, i});
+            priorityQueue.add(num);
         }
 
-        System.out.println(answer);
+        while (!printQueue.isEmpty()) {
+            int[] print = printQueue.poll();
+            if (print[0] == priorityQueue.peek()){
+                priorityQueue.poll();
+                if (print[1] == location) break;
+            }else printQueue.add(print);
+        }
+
+        System.out.println(priorities.length - printQueue.size());
     }
 
     @Override
