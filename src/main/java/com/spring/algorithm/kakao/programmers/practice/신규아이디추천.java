@@ -22,26 +22,17 @@ public class 신규아이디추천 extends AbstractAlgorithm {
 
     public void test1() {
         String answer;
-        StringBuilder sb = new StringBuilder();
         char[] newIdArray = new_id.toCharArray();
         //1단계, 2단계
-        for (char id : newIdArray) {
-            if (Character.isLetter(id)) {
-                sb.append(String.valueOf(id).toLowerCase());
-            } else if (Character.isDigit(id) || id == '-' || id == '_' || id == '.') {
-                sb.append(id);
-            }
-        }
+        answer = new_id.toLowerCase();
+        answer = answer.replaceAll("[^a-z0-9-_.]", "");
         //3단계
-        answer = sb.toString();
-        while (answer.contains("..")) {
-            answer = answer.replace("..", ".");
-        }
+        answer = answer.replaceAll("\\.{2,}", ".");
         //4단계
         if (answer.startsWith(".")) answer = answer.substring(1);
         if (answer.endsWith(".")) answer = answer.substring(0, answer.length() - 1);
         //5단계
-        if (answer.length() == 0) answer = "aaaaaaaaaaaaaaa".substring(0, new_id.length());
+        if (answer.length() == 0) answer = "aaa";
         //6단계
         if (answer.length() > 15) answer = answer.substring(0, 15);
         if (answer.endsWith(".")) answer = answer.substring(0, answer.length() - 1);
@@ -50,6 +41,5 @@ public class 신규아이디추천 extends AbstractAlgorithm {
             answer = answer.concat(answer.substring(answer.length() - 1));
         }
         System.out.println(answer);
-        System.out.println("bat.y.abcdefghi");
     }
 }
