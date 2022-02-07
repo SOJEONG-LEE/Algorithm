@@ -1,4 +1,4 @@
-package com.spring.algorithm.kakao.programmers.practice;
+package com.spring.algorithm.kakao.programmers.practice.level1;
 
 import com.spring.algorithm.common.AbstractAlgorithm;
 import org.springframework.stereotype.Service;
