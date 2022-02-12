@@ -3,17 +3,13 @@ package com.spring.algorithm.kakao.programmers.practice.level1;
 import com.spring.algorithm.common.AbstractAlgorithm;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+@Service("서울에서김서방찾기")
+public class 서울에서김서방찾기 extends AbstractAlgorithm {
 
-@Service("같은숫자는싫어")
-public class 같은숫자는싫어 extends AbstractAlgorithm {
+    private String[] seoul;
 
-    private int[] arr;
-
-    public 같은숫자는싫어() {
-        this.arr = new int[]{1, 1, 3, 3, 0, 1, 1};
+    public 서울에서김서방찾기() {
+        this.seoul = new String[]{"Jane", "Kim"};
     }
 
     @Override
@@ -22,10 +18,9 @@ public class 같은숫자는싫어 extends AbstractAlgorithm {
     }
 
     public void test1() {
-        List<Integer> answer = new ArrayList<>(Arrays.asList(arr[0]));
-        for (int num : arr) {
-            if(answer.get(answer.size()-1) != num) answer.add(num);
+        String answer = "김서방은 ";
+        for (int i = 0; i < seoul.length; i++) {
+            if(seoul[i].equals("Kim")) System.out.println(answer.concat(String.valueOf(i)).concat("에 있다"));
         }
-        System.out.println(answer);
     }
 }
