@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.*;
 
 
-@Service("같은숫자는싫어")
+@Service("두개뽑아서더하기")
 public class 두개뽑아서더하기 extends AbstractAlgorithm {
 
     private int[] arr;
@@ -20,14 +20,6 @@ public class 두개뽑아서더하기 extends AbstractAlgorithm {
 
     }
 
-    public void test1() {
-        List<Integer> answer = new ArrayList<>(Arrays.asList(arr[0]));
-        for (int num : arr) {
-            if (answer.get(answer.size() - 1) != num) answer.add(num);
-        }
-        System.out.println(answer);
-    }
-
     public void test1(int[] numbers) {
         Set<Integer> hashset = new HashSet<Integer>();
         for (int i = 0; i < numbers.length; i++) {
@@ -36,5 +28,6 @@ public class 두개뽑아서더하기 extends AbstractAlgorithm {
             }
         }
         hashset.stream().mapToInt(m -> m).sorted().toArray();
+
     }
 }
