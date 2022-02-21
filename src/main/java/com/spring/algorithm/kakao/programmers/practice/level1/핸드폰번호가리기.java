@@ -19,6 +19,7 @@ public class 핸드폰번호가리기 extends AbstractAlgorithm {
 
     public void test1() {
         String answer = "********************";
-        phone_number.substring(phone_number.length()-5);
+        answer = answer.substring(1, phone_number.length()-3).concat(phone_number.substring(phone_number.length()-4));
+        System.out.println(answer);
     }
 }
