@@ -14,7 +14,7 @@ public class 문자열내마음대로정렬하기 extends AbstractAlgorithm {
     public 문자열내마음대로정렬하기() {
         this.strings = new String[]{"abce", "abcd", "cdx"};
 //        this.strings= new String[]{"sun", "bed", "car"};
-        this.n = 1;
+        this.n = 2;
     }
 
     @Override
@@ -27,7 +27,7 @@ public class 문자열내마음대로정렬하기 extends AbstractAlgorithm {
         PriorityQueue<String> queue = new PriorityQueue<>((a, b) -> {
             char letterA = a.toCharArray()[n];
             char letterB = b.toCharArray()[n];
-            if (letterA == letterB) return -1;
+            if (letterA == letterB) return a.compareTo(b);
             else return Character.compare(letterA, letterB);
         });
         for (String word : strings) {
@@ -36,6 +36,7 @@ public class 문자열내마음대로정렬하기 extends AbstractAlgorithm {
 
         for (int i = 0; i < strings.length; i++) {
             answer[i] = queue.poll();
+            System.out.println(answer[i]);
         }
     }
 }
