@@ -77,7 +77,7 @@
 |	2022-02-28	|	:ballot_box_with_check: |	문자열 내 마음대로 정렬하기	|	Challenges	|	|
 </details>  
 
-<details>
+<details open>
 <summary>March 2022</summary>
 
 |날짜|완료여부|:memo: Algorithm(JAVA)|:memo: SQL|비고|
