@@ -90,7 +90,7 @@
 |	2022-03-06	|	:ballot_box_with_check: |	약수의 합	|	Weather Observation Station 16	|	|
 |	2022-03-07	|	:ballot_box_with_check: |	직사각형 별찍기	|	Weather Observation Station 17	|	|
 |	2022-03-08	|	:ballot_box_with_check: |	수박수박수박수박수박수?	|	Weather Observation Station 18	|	|
-|	2022-03-09	| |		|		|	|
+|	2022-03-09	| :ballot_box_with_check: |	정수 내림차순으로 배치하기	|	Interviews	|	|
 |	2022-03-10	| |		|		|	|
 </details>
 
