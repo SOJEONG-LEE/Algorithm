@@ -4,9 +4,6 @@ import com.spring.algorithm.common.AbstractAlgorithm;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.stream.Collectors;
 
 @Service("정수내림차순으로배치하기")
 public class 정수내림차순으로배치하기 extends AbstractAlgorithm {
@@ -29,6 +26,7 @@ public class 정수내림차순으로배치하기 extends AbstractAlgorithm {
         for (int i = num.length - 1; i >= 0; i--) {
             sb.append(num[i]);
         }
+        answer = Long.valueOf(sb.toString());
         System.out.println(answer);
     }
 }
