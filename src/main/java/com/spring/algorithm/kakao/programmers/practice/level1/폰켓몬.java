@@ -22,10 +22,9 @@ public class 폰켓몬 extends AbstractAlgorithm {
     }
 
     public void test1() {
-        int answer = 0;
-        int maxNum = nums.length / 2;
+        int answer = nums.length / 2;
         Set<Integer> set = Arrays.stream(nums).boxed().collect(Collectors.toSet());
-        answer = set.size() < maxNum ? set.size() : maxNum;
+        if (set.size() < answer) answer = set.size();
 
         System.out.println(answer);
     }
