@@ -95,6 +95,7 @@
 |	2022-03-11	| :ballot_box_with_check: |	x만큼 간격이 있는 n개의 숫자	|	Japan Population	|	|
 |	2022-03-12	|	:ballot_box_with_check: |	폰켓몬	|	Weather Observation Station 14	|	|
 |	2022-03-13	|	:ballot_box_with_check: |	[1차] 다트 게임	|	Weather Observation Station 15	|	|
-|	2022-03-14	|  |		|		|	|
+|	2022-03-14	|	:ballot_box_with_check: |	[1차] 비밀지도	|	Weather Observation Station 2	|	|
+|	2022-03-15	|  |		|		|	|
 </details>
 
