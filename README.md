@@ -97,7 +97,7 @@
 |	2022-03-13	|	:ballot_box_with_check: |	[1차] 다트 게임	|	Weather Observation Station 15	|	|
 |	2022-03-14	|	:ballot_box_with_check: |	[1차] 비밀지도	|	Weather Observation Station 2	|	|
 |	2022-03-15	|	:ballot_box_with_check: |	키패드 누르기	|	Weather Observation Station 13	|	|
-|	2022-03-16	|  |		|		|	|
+|	2022-03-16	| :ballot_box_with_check: |	자연수 뒤집어 배열로 만들기	|	The Blunder	|	|
 |	2022-03-17	|  |		|		|	|
 </details>
 
