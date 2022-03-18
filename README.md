@@ -99,6 +99,7 @@
 |	2022-03-15	|	:ballot_box_with_check: |	키패드 누르기	|	Weather Observation Station 13	|	|
 |	2022-03-16	| :ballot_box_with_check: |	자연수 뒤집어 배열로 만들기	|	The Blunder	|	|
 |	2022-03-17	| :ballot_box_with_check: |	문자열 내림차순으로 배치하기	|	Top Earners	|	|
-|	2022-03-18	|  |		|		|	|
+|	2022-03-18	| :ballot_box_with_check: |	약수의 개수와 덧셈	|	Revising Aggregations - Averages	|	|
+|	2022-03-19	|  |		|		|	|
 </details>
 
