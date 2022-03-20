@@ -101,6 +101,7 @@
 |	2022-03-17	| :ballot_box_with_check: |	문자열 내림차순으로 배치하기	|	Top Earners	|	|
 |	2022-03-18	| :ballot_box_with_check: |	약수의 개수와 덧셈	|	Revising Aggregations - Averages	|	|
 |	2022-03-19	| :ballot_box_with_check: |	정수 제곱근 판별	|	Average Population	|	|
-|	2022-03-20	|  |		|		|	|
+|	2022-03-20	| :ballot_box_with_check: | 소수 찾기	|	Japan Population	|	|
+|	2022-03-21	|  |		|		|	|
 </details>
 
