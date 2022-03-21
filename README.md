@@ -102,6 +102,7 @@
 |	2022-03-18	| :ballot_box_with_check: |	약수의 개수와 덧셈	|	Revising Aggregations - Averages	|	|
 |	2022-03-19	| :ballot_box_with_check: |	정수 제곱근 판별	|	Average Population	|	|
 |	2022-03-20	| :ballot_box_with_check: | 소수 찾기	|	Japan Population	|	|
-|	2022-03-21	|  |		|		|	|
+|	2022-03-21	| :ballot_box_with_check: | 3진법 뒤집기	|	Population Density Difference	|	|
+|	2022-03-22	|  |		|		|	|
 </details>
 
