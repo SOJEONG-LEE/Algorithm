@@ -12,7 +12,7 @@ public class StartController {
     public static void main(String[] args) {
         AbstractApplicationContext container = new GenericXmlApplicationContext("applicationContext.xml");
         // 알고리즘 클래스 선택
-        String className = "소수찾기";
+        String className = "3진법뒤집기";
 
         AbstractAlgorithm algorithm = (AbstractAlgorithm) container.getBean(className);
         algorithm.getMethodName().stream().sorted().forEach(name -> {
