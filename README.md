@@ -105,6 +105,7 @@
 |	2022-03-21	| :ballot_box_with_check: | 3진법 뒤집기	|	Population Density Difference	|	|
 |	2022-03-22	| :ballot_box_with_check: | 소수 만들기	|	Placements	|	|
 |	2022-03-23	| :ballot_box_with_check: | 크레인 인형뽑기	|	Symmetric Pairs	|	|
-|	2022-03-24	|  |		|		|	|
+|	2022-03-24	| :ballot_box_with_check: | 피로도	|	Draw The Triangle 2	|	|
+|	2022-03-25	|  |		|		|	|
 </details>
 
