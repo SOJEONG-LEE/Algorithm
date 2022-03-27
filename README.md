@@ -107,6 +107,7 @@
 |	2022-03-23	| :ballot_box_with_check: | 크레인 인형뽑기	|	Symmetric Pairs	|	|
 |	2022-03-24	| :ballot_box_with_check: | 피로도	|	Draw The Triangle 2	|	|
 |	2022-03-25	| :ballot_box_with_check: | 2070. 큰 놈, 작은 놈, 같은 놈	|	Print Prime Numbers	|	|
-|	2022-03-26	|  |		|		|	|
+|	2022-03-26	| :ballot_box_with_check: | 2047. 신문 헤드라인	|	Draw The Triangle 1	|	|
+|	2022-03-27	|  |		|		|	|
 </details>
 
