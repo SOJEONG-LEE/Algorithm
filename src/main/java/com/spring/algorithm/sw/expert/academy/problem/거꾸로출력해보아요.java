@@ -19,7 +19,11 @@ public class 거꾸로출력해보아요 extends AbstractAlgorithm {
     public void test1() {
         Scanner sc = new Scanner(System.in);
         int T;
-        T=sc.nextInt();
+        T = sc.nextInt();
+        for (int i = T; i >= 0; i--) {
+            System.out.print(i);
+            if (i != 0) System.out.print(" ");
+        }
     }
 
 
