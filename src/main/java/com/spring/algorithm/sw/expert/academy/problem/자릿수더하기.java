@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Scanner;
 
-@Service("자릿수더하기")
+@Service("SW자릿수더하기")
 public class 자릿수더하기 extends AbstractAlgorithm {
 
 
