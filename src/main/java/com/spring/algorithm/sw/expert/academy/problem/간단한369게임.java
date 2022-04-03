@@ -23,10 +23,10 @@ public class 간단한369게임 extends AbstractAlgorithm {
 
         for (int i = 1; i <= num; i++) {
             String strNum = String.valueOf(i);
-            if (strNum.contains("3")) {
+            if (strNum.contains("3") || strNum.contains("6") || strNum.contains("9")) {
                 StringBuilder sb = new StringBuilder();
                 for (char array : strNum.toCharArray()) {
-                    if (array == '3') sb.append("-");
+                    if (array == '3' || array == '6' || array =='9') sb.append("-");
                 }
                 strNum = sb.toString();
             }
