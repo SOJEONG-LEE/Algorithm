@@ -33,7 +33,7 @@ public class 평균값구하기 extends AbstractAlgorithm {
                 int num = sc.nextInt();
                 sum += num;
             }
-            System.out.println("#" + test_case + " " + sum / 10);
+            System.out.println("#" + test_case + " " + (int) Math.round(sum / 10d));
         }
     }
 
