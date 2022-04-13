@@ -5,12 +5,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.Scanner;
 
-@Service("더블더블")
-public class 더블더블 extends AbstractAlgorithm {
+@Service("1대1가위바위보")
+public class 일대일가위바위보 extends AbstractAlgorithm {
 
-    public 더블더블() {
+    public 일대일가위바위보() {
         /*
-8
+3 2
          */
     }
 
@@ -21,10 +21,12 @@ public class 더블더블 extends AbstractAlgorithm {
 
     public void test1() {
         Scanner sc = new Scanner(System.in);
-        int T = sc.nextInt();
-        for (int i = 0; i <= T; i++) {
-            System.out.print((int) Math.pow(2, i) + " ");
-        }
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+
+        if(num1 > num2) System.out.println("A");
+        else if(num1 < num2) System.out.println("B");
+        else System.out.println("C");
 
     }
 
