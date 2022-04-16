@@ -21,16 +21,6 @@ public class 쉬운거스름돈 extends AbstractAlgorithm {
 
     }
 
-    /*
-    50,000 원 : 0개
-    10,000 원 : 3개
-    5,000 원 : 0개
-    1,000 원 : 2개
-    500 원 : 1개
-    100 원 : 3개
-    50 원 : 1개
-    10 원 : 0개
-     */
     public void test1() {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
