@@ -22,7 +22,7 @@ public class N줄덧셈 extends AbstractAlgorithm {
     public void test1() {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        System.out.println(num);
+        System.out.println((1 + num) * num / 2);
     }
 
 
