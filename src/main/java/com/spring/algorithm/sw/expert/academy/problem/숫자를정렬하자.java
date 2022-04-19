@@ -3,7 +3,10 @@ package com.spring.algorithm.sw.expert.academy.problem;
 import com.spring.algorithm.common.AbstractAlgorithm;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 @Service("숫자를정렬하자")
 public class 숫자를정렬하자 extends AbstractAlgorithm {
@@ -44,9 +47,12 @@ public class 숫자를정렬하자 extends AbstractAlgorithm {
         int T;
         T = sc.nextInt();
         for (int test_case = 1; test_case <= T; test_case++) {
-            for (int i = 1; i <= sc.nextInt(); i++) {
-
+            int lenght = sc.nextInt();
+            List<Integer> array = new ArrayList<>();
+            for (int i = 0; i < lenght; i++) {
+                array.add(sc.nextInt());
             }
+            System.out.println("#" + test_case + " " + array.stream().sorted().map(m -> String.valueOf(m)).collect(Collectors.joining(" ")));
         }
     }
 
